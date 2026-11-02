@@ -3,3 +3,4 @@ node_modules/
 *.log
 .specify/
 .opencode/
+.specs/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Asistencia de Taller</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <h1>Registro de Asistencia de Taller</h1>
+    <p class="subtitle">Docente: gestiona estudiantes, sesiones y asistencia en tu navegador.</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Vistas de la aplicación">
+    <button type="button" data-view="students">Estudiantes</button>
+    <button type="button" data-view="sessions">Sesiones</button>
+    <button type="button" data-view="attendance">Asistencia</button>
+    <button type="button" data-view="reports">Reportes</button>
+    <button type="button" data-view="settings">Configuración</button>
+  </nav>
+
+  <main id="main">
+    <section id="view-students" aria-labelledby="heading-students" hidden></section>
+    <section id="view-sessions" aria-labelledby="heading-sessions" hidden></section>
+    <section id="view-attendance" aria-labelledby="heading-attendance" hidden></section>
+    <section id="view-reports" aria-labelledby="heading-reports" hidden></section>
+    <section id="view-settings" aria-labelledby="heading-settings" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Los datos se guardan solo en este navegador. Versión 1.0.0.</p>
+  </footer>
+
+  <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <script type="module" src="src/ui/app.js"></script>
+</body>
+</html>
